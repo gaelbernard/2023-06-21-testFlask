@@ -2,10 +2,11 @@ import json
 import sqlite3
 from flask import Flask, redirect, render_template, request, send_from_directory, url_for
 from flask_cors import CORS
+import time
 
 #ENTRYPOINT ["gunicorn", "app:app", "--bind", "0.0.0.0:5008", "--timeout", "10000"]
 
-
+time.sleep(30)
 app = Flask(__name__)
 
 CORS(app)
