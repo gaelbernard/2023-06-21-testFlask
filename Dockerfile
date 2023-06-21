@@ -12,5 +12,5 @@ COPY . .
 
 EXPOSE 5010
 
-ENTRYPOINT ["gunicorn", "app:app", "--bind", "0.0.0.0:5010"]
+ENTRYPOINT ["gunicorn", "app:app", "--bind", "0.0.0.0:5010", "--timeout", "600"]
 
